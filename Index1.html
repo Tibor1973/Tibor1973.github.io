@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Rendezvénytechnika</h1>
+<a href="https://www.google.com"> Google</a>
+<p><a href="mailto: szilvagyi.tibi@gmail.com">email</a></p>
+
+<figure>
+    <img src="image/letöltés.jpg" alt="munkások">
+<figcaption>Dolgozz keményen</figcaption>
+</figure>
+<fieldset>
+    <!-- űrlap címe -->
+    <legend>ez itt az űrlap címe</legend>
+
+    <!-- progress bar -->
+    <progress value="13" max="100"></progress>
+
+    <!-- számozatlan listába helyezett űrlap elemek, nem kötelező így csinálni, én így szoktam -->
+    <ul>
+        <li>
+            <!--
+            a label űrlapelemek elnevezésére, azonosítására szolgál
+            átlaguser számára nem hordoz lényeges információt, inkább a képernyő felolvasó szoftverek
+            veszik hasznát
+            -->
+            <label for="vezeteknev">Vezetéknév</label>
+
+            <!-- egyszerű szöveg input, a placeholder a segítő szöveget mutatja, mely eltűnik, ha a user belekattint -->
+            <input type="text" id="vezeteknev" placeholder="Vezetéknév">
+        </li>
+        <li>
+            <label for="email">E-mail cím</label>
+            <!-- e-mail input -->
+            <input type="email" id="email" placeholder="E-mail cím">
+        </li>
+        <li>
+            <label for="password">Jelszó</label>
+            <!-- jelszó input -->
+            <input type="password" id="password">
+        </li>
+        <li>
+            <label for="hirlevel">Hírlevél</label>
+            <!-- jelölőnégyzet -->
+            <input type="checkbox" id="hirlevel">
+        </li>
+        <li>
+            <!-- rádiógombok -->
+            <label for="ferfi">Férfi</label>
+            <input type="radio" name="gender" value="ferfi" id="ferfi">
+            <label for="no">Nő</label>
+            <input type="radio" name="gender" value="no" id="no">
+        </li>
+        <li>
+            <label for="colors">Színek</label>
+            <!-- legördülő -->
+            <select id="colors">
+                <option value="red">piros</option>
+                <option value="black">fekete</option>
+                <option value="green">zöld</option>
+            </select>
+        </li>
+        <li>
+            <label for="auto">Autó</label>
+            <!-- lelegördülő, csoportokkal -->
+            <select id="auto">
+                <optgroup label="Német">
+                    <option value="audi">Audi</option>
+                    <option value="Mercedes">Mercedes</option>
+                </optgroup>
+                <optgroup label="Olasz">
+                    <option value="alfa">Alfa Romeo</option>
+                    <option value="fiat">Fiat</option>
+                </optgroup>
+            </select>
+        </li>
+        <li>
+            <label for="introduction">Bemutatozás</label>
+            <!-- többsoros szöveg -->
+            <textarea id="introduction" rows="4" cols="50"></textarea>
+        </li>
+        <li>
+            <label for="cv">Önéletrajz</label>
+            <!-- fájl input -->
+            <input type="file" id="cv">
+        </li>
+        <li>
+            <!-- űrlap elküldő gomb -->
+            <input type="submit" value="elküldöm az adatokat">
+        </li>
+        <li>
+            <!-- gomb HTML elem -->
+            <button type="submit">elküldöm az adatokat</button>
+        </li>
+    </ul>
+
+</fieldset>	
+
+<body>
+    
+</body>
+</html>
